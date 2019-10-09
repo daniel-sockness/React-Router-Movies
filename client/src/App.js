@@ -14,10 +14,8 @@ const App = () => {
   return (
     <div>
       <SavedList list={savedList} />
-      <Router>
       <Route exact path="/" component={MovieList} />
       <Route path="/movies/:id" component={Movie} />
-      </Router>
     </div>
   );
 };
